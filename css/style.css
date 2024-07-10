@@ -1,0 +1,287 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+header
+{
+    width: 100%;
+    height: 88vh;
+    background-image: url(../image/events-heavenly-header.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    color: #fff;
+    position: relative;
+}
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(214, 46, 51, 0.6);
+}
+.title
+{
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    text-align: center;
+    transition: .5s linear;
+    -webkit-transition: .5s linear;
+    -moz-transition: .5s linear;
+    -ms-transition: .5s linear;
+    -o-transition: .5s linear;
+}
+.title h2
+{
+    font-size: 60px;
+}
+.iconMenu
+{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 49%;
+    left: 1.2%;
+    cursor: pointer;
+}
+.open
+{
+    transition: .5s linear;
+    -webkit-transition: .5s linear;
+    -moz-transition: .5s linear;
+    -ms-transition: .5s linear;
+    -o-transition: .5s linear;
+}
+.iconMenu svg
+{
+    font-size: 28px !important;
+    cursor: pointer;
+}
+.iconMenu p
+{
+    font-size: 30px;
+    padding-left: 12px;
+    padding-top: 13px;
+}
+.lists
+{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    bottom: 0;
+    background-color: black;
+    transition: .5s linear;
+    -webkit-transition: .5s linear;
+    -moz-transition: .5s linear;
+    -ms-transition: .5s linear;
+    -o-transition: .5s linear;
+    z-index: 999;
+}
+.lists.active
+{
+    left: 0px;
+}
+.lists ul
+{
+    margin-top: 100px;
+    list-style: none;
+}
+.lists ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 400;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+}
+.lists ul li
+{
+    margin-top: 35px;
+}
+.lists ul li a:hover
+{
+    color: #8d280f;
+}
+.close svg
+{
+    cursor: pointer;
+    font-size: 22px;
+}
+
+
+.duration
+{
+    margin-top: 80px;
+}
+.boxs
+{
+    width: 60%;
+    margin: auto;
+}
+.box
+{
+    width: 100%;
+    transition: .5s linear;
+    -webkit-transition: .5s linear;
+    -moz-transition: .5s linear;
+    -ms-transition: .5s linear;
+    -o-transition: .5s linear;
+}
+.box .titleBox
+{
+    background-color: rgba(214, 46, 51, 0.6);
+    padding: 9px 0;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.box .contentBox 
+{
+    position: relative;
+    background-color: #ccc;
+    /*padding: 10px 0;
+    *//*padding: 10px 10px;
+    */height: 0;
+    overflow: hidden;
+    transition: .5s linear;
+    -webkit-transition: .5s linear;
+    -moz-transition: .5s linear;
+    -ms-transition: .5s linear;
+    -o-transition: .5s linear;
+}
+.box.active .contentBox 
+{
+    position: relative;
+    background-color: #ccc;
+    /*padding: 10px 0;
+    */padding: 10px 10px;
+    height: auto;
+    overflow: visible;
+}
+.count
+{
+    position: relative;
+    margin-top: 65px;
+    background-image: url("../image/invitation-2508607__340.jpg");
+    width: 100%;
+    height: 240px;
+    padding: 20px 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+.boxCount
+{
+    margin: auto;
+    margin-top: 60px ;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    height: 135px;
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer.mt-5
+{
+    margin-top: 140px !important;
+    color: #444;
+}
+footer.mt-5 .titleFooter h2
+{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #444;
+}
+.titleLeftFooter h5
+{
+    font-size: 16px;
+    font-weight: 800;
+}
+.boxIcom
+{
+    width: 42px;
+    border: 1px solid #444;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 14px;
+    cursor: pointer;
+}
+.boxIcom:hover
+{
+    background-color: #8d280f;
+    border: none;
+    color: #fff;
+}
+.form p
+{
+    font-size: 17px;
+}
+
+@media(max-width:1205px)
+{
+    .boxCount
+    {
+        width: 230px;
+        height: 100px;
+    }
+}
+@media(max-width:993px)
+{
+    .count
+    {
+        height: 400px;
+    }
+}
+@media(max-width:989px)
+{
+    .boxs
+    {
+        width: 85% !important;
+    }
+}
+@media(max-width:768px)
+{
+    .count
+    {
+        height: 120vh;
+    }
+}
+@media(max-width:493px)
+{
+    header
+    {
+        overflow-x: hidden !important;
+    }
+    .boxs
+    {
+        width: 100% !important;
+    }
+    .box
+    {
+        width: 100% !important;
+    }
+}
